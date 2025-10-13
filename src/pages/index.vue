@@ -9,19 +9,22 @@ const checked = computed({
   set: () => toggleDark(),
 })
 
-const menuItems = computed(() => ([
+const menuItems = computed(() => [
   { title: t('navbar.Mock'), route: 'mock' },
   { title: t('navbar.Charts'), route: 'charts' },
   { title: t('navbar.UnoCSS'), route: 'unocss' },
   { title: t('navbar.Counter'), route: 'counter' },
   { title: t('navbar.KeepAlive'), route: 'keepalive' },
   { title: t('navbar.ScrollCache'), route: 'scroll-cache' },
+  { title: t('navbar.Galacean'), route: 'galacean' },
   { title: t('navbar.404'), route: 'unknown' },
-]))
+])
 
 const showLanguagePicker = ref(false)
 const languageValues = ref<Array<string>>([locale.value])
-const language = computed(() => languageColumns.find(l => l.value === locale.value).text)
+const language = computed(
+  () => languageColumns.find(l => l.value === locale.value).text,
+)
 
 function onLanguageConfirm(event: { selectedOptions: PickerColumn }) {
   locale.value = event.selectedOptions[0].value as string
@@ -67,6 +70,6 @@ function onLanguageConfirm(event: { selectedOptions: PickerColumn }) {
 
 <route lang="json5">
 {
-  name: 'Home'
+  name: "Home",
 }
 </route>

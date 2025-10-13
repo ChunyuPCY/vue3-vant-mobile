@@ -11,6 +11,12 @@ importers:
 
   .:
     dependencies:
+      '@galacean/effects':
+        specifier: ^2.6.6
+        version: 2.6.6
+      '@galacean/effects-plugin-rich-text':
+        specifier: ^2.6.6
+        version: 2.6.6
       '@unhead/vue':
         specifier: 2.0.17
         version: 2.0.17(vue@3.5.21(typescript@5.9.2))
@@ -1094,6 +1100,25 @@ packages:
   '@eslint/plugin-kit@0.3.5':
     resolution: {integrity: sha512-Z5kJ+wU3oA7MMIqVR9tyZRtjYPr4OC004Q4Rw7pgOKUOKkJfZ3O24nz3WYfGRpMDNmcOi3TwQOmgm7B7Tpii0w==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@galacean/effects-core@2.6.6':
+    resolution: {integrity: sha512-JzJaZ1ycqlV8+zjFdi1GvPWRc3/1xINOoJchKEuyIfEMVaDfqpXSyw8RQoWBCkEfyMGaVyqKANLopKFRwZfROQ==}
+
+  '@galacean/effects-math@1.1.0':
+    resolution: {integrity: sha512-6b1v0jq7sYYizRXWmXGTOiboeOjwVzu0BQ6HigC0GVn50oW4wVWX8lFfOd3HIYhddGareI5IZvjaJZwj69qAcA==}
+    engines: {node: '>=10.0.0'}
+
+  '@galacean/effects-plugin-rich-text@2.6.6':
+    resolution: {integrity: sha512-VZM02AqsXGrwBY6S5I6nRUAMIcvEoJrUbI+7huIc6s9lZEUZ6UHWUkd/UFQhp4L+yL5lF7jYmVm+f4x9hW5nag==}
+
+  '@galacean/effects-specification@2.5.1':
+    resolution: {integrity: sha512-DXSZJl90I+Ml/A/ib2GrpUJUVMazw+FHHsBY0B2DK46etiA+YrWO/mUN0SF37gNrC++/gs9oqre78fFI+Tlr/Q==}
+
+  '@galacean/effects-webgl@2.6.6':
+    resolution: {integrity: sha512-5QNvsR4kjUJ1SSCO541DA4vl/sfA0pp9oiZHIXX3Dqb+K0/T8J0zeXpVrBjML09TN8Nh13oyQN6jk66KqGFKJA==}
+
+  '@galacean/effects@2.6.6':
+    resolution: {integrity: sha512-kFo6M/QW68r/9Gc0r46/65V4ecnss6GPoLBbCg/oy8358qPZ6tp3tG16k4n2yAHByEByD4bxu0K36GDpvn2HUA==}
 
   '@hapi/bourne@3.0.0':
     resolution: {integrity: sha512-Waj1cwPXJDucOib4a3bAISsKJVb15MKi9IvmTI/7ssVEm6sywXGjVJDhl6/umt1pK1ZS7PacXU3A1PmFKHEZ2w==}
@@ -2664,6 +2689,9 @@ packages:
     resolution: {integrity: sha512-f7ccFPK3SXFHpx15UIGyRJ/FJQctuKZ0zVuN3frBo4HnK3cay9VEW0R6yPYFHC0AgqhukPzKjq22t5DmAyqGyw==}
     engines: {node: '>=16'}
 
+  flatbuffers@24.3.25:
+    resolution: {integrity: sha512-3HDgPbgiwWMI9zVB7VYBHaMrbOO7Gm0v+yD2FV/sCKj+9NDeVL7BOBYUuhWAQGKWOzBo8S9WdMvV0eixO233XQ==}
+
   flatted@3.3.3:
     resolution: {integrity: sha512-GX+ysw4PBCz0PzosHDepZGANEuFCMLrnRTiEy9McGjmkCQYwRq4A/X786G/fjM/+OjsWSU1ZrY5qyARZmO/uwg==}
 
@@ -3205,6 +3233,9 @@ packages:
   levn@0.4.1:
     resolution: {integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==}
     engines: {node: '>= 0.8.0'}
+
+  libtess@1.2.2:
+    resolution: {integrity: sha512-Nps8HPeVVcsmJxUvFLKVJcCgcz+1ajPTXDVAVPs6+giOQP4AHV31uZFFkh+CKow/bkB7GbZWKmwmit7myaqDSw==}
 
   lines-and-columns@1.2.4:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
@@ -4414,6 +4445,10 @@ packages:
 
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
+
+  uuid@9.0.1:
+    resolution: {integrity: sha512-b+1eJOlsR9K8HJpow9Ok3fiWOWSIcIzXodvv0rQjVoOVNpWMpxf1wZNpt4y9h10odCNrqnYp1OBzRktckBe3sA==}
+    hasBin: true
 
   vant@4.9.21:
     resolution: {integrity: sha512-hXUoZMrLLjykimFRLDlGNd+K2iYSRh9YwLMKnsVdVZ+9inUKxpqnjhOqlZwocbnYkvJlS+febf9u9aJpDol4Pw==}
@@ -5793,6 +5828,29 @@ snapshots:
     dependencies:
       '@eslint/core': 0.15.2
       levn: 0.4.1
+
+  '@galacean/effects-core@2.6.6':
+    dependencies:
+      '@galacean/effects-math': 1.1.0
+      '@galacean/effects-specification': 2.5.1
+      flatbuffers: 24.3.25
+      libtess: 1.2.2
+      uuid: 9.0.1
+
+  '@galacean/effects-math@1.1.0': {}
+
+  '@galacean/effects-plugin-rich-text@2.6.6': {}
+
+  '@galacean/effects-specification@2.5.1': {}
+
+  '@galacean/effects-webgl@2.6.6':
+    dependencies:
+      '@galacean/effects-core': 2.6.6
+
+  '@galacean/effects@2.6.6':
+    dependencies:
+      '@galacean/effects-core': 2.6.6
+      '@galacean/effects-webgl': 2.6.6
 
   '@hapi/bourne@3.0.0': {}
 
@@ -7671,6 +7729,8 @@ snapshots:
       flatted: 3.3.3
       keyv: 4.5.4
 
+  flatbuffers@24.3.25: {}
+
   flatted@3.3.3: {}
 
   follow-redirects@1.15.11: {}
@@ -8160,6 +8220,8 @@ snapshots:
     dependencies:
       prelude-ls: 1.2.1
       type-check: 0.4.0
+
+  libtess@1.2.2: {}
 
   lines-and-columns@1.2.4: {}
 
@@ -9598,6 +9660,8 @@ snapshots:
       punycode: 2.3.1
 
   util-deprecate@1.0.2: {}
+
+  uuid@9.0.1: {}
 
   vant@4.9.21(vue@3.5.21(typescript@5.9.2)):
     dependencies:

@@ -26,6 +26,7 @@ export function createVitePlugins(mode: string) {
     VueRouter({
       extensions: ['.vue'],
       routesFolder: 'src/pages',
+      exclude: ['src/pages/**/comps/**'],
       dts: 'src/types/typed-router.d.ts',
     }),
 

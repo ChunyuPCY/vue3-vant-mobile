@@ -23,6 +23,9 @@ declare module 'vue-router/auto-routes' {
     'Charts': RouteRecordInfo<'Charts', '/charts', Record<never, never>, Record<never, never>>,
     'Counter': RouteRecordInfo<'Counter', '/counter', Record<never, never>, Record<never, never>>,
     'ForgotPassword': RouteRecordInfo<'ForgotPassword', '/forgot-password', Record<never, never>, Record<never, never>>,
+    'Galacean': RouteRecordInfo<'Galacean', '/galacean', Record<never, never>, Record<never, never>>,
+    '/galacean/comps/ClickBtn': RouteRecordInfo<'/galacean/comps/ClickBtn', '/galacean/comps/ClickBtn', Record<never, never>, Record<never, never>>,
+    '/galacean/comps/TurnTable': RouteRecordInfo<'/galacean/comps/TurnTable', '/galacean/comps/TurnTable', Record<never, never>, Record<never, never>>,
     'KeepAlive': RouteRecordInfo<'KeepAlive', '/keepalive', Record<never, never>, Record<never, never>>,
     'Login': RouteRecordInfo<'Login', '/login', Record<never, never>, Record<never, never>>,
     'Mock': RouteRecordInfo<'Mock', '/mock', Record<never, never>, Record<never, never>>,
@@ -62,6 +65,18 @@ declare module 'vue-router/auto-routes' {
     }
     'src/pages/forgot-password/index.vue': {
       routes: 'ForgotPassword'
+      views: never
+    }
+    'src/pages/galacean/index.vue': {
+      routes: 'Galacean'
+      views: never
+    }
+    'src/pages/galacean/comps/ClickBtn.vue': {
+      routes: '/galacean/comps/ClickBtn'
+      views: never
+    }
+    'src/pages/galacean/comps/TurnTable.vue': {
+      routes: '/galacean/comps/TurnTable'
       views: never
     }
     'src/pages/keepalive/index.vue': {
