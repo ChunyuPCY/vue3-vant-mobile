@@ -44,7 +44,7 @@ async function handleClickStartBtn() {
   // 获取中奖信息
   consola.info('中奖index', winPrize.value)
   // 设置状态机参数（与设计约定好状态机参数名称）
-  const animator = compositionRef.value.getComponent(Animator)
+  const animator: Animator = compositionRef.value.getComponent(Animator)
   animator.setFloat('winPrize', winPrize.value)
   animator.setTrigger('rotate')
 }
@@ -65,6 +65,7 @@ onMounted(() => {
     })
 
     player.on('click', (evt) => {
+      consola.info('click on: ', evt?.name)
       // 点击开始按钮
       if (evt.name === 'lotteryBtn') {
         handleClickStartBtn()
@@ -92,12 +93,12 @@ function onConfirm({ selectedValues, selectedOptions }) {
 
 <template>
   <div ref="containerRef" className="demo-container" />
-  <van-row gutter="16">
-    <van-col span="18">
+  <van-row gutter="16" class="items-center">
+    <van-col span="20">
       <van-field v-model="winPrizeText" is-link readonly label="抽中奖品" placeholder="选择城市" @click="showPicker = true" />
     </van-col>
-    <van-col span="6">
-      <van-button size="small" type="primary" @click="handleClickStartBtn">
+    <van-col span="4">
+      <van-button class="w-full" size="small" type="primary" @click="handleClickStartBtn">
         开始抽奖
       </van-button>
     </van-col>
