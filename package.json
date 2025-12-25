@@ -21,6 +21,8 @@
     "prepare": "simple-git-hooks"
   },
   "dependencies": {
+    "@galacean/effects": "^2.8.1",
+    "@galacean/effects-plugin-rich-text": "^2.8.1",
     "@unhead/vue": "2.0.19",
     "@vant/touch-emulator": "^1.4.0",
     "@vant/use": "^1.6.0",
