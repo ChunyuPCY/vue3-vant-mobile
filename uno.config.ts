@@ -1,4 +1,5 @@
 import { createRemToPxProcessor } from '@unocss/preset-wind4/utils'
+import { FileSystemIconLoader } from '@iconify/utils/lib/loader/node-loaders'
 
 import {
   defineConfig,
@@ -24,6 +25,25 @@ export default defineConfig({
     presetAttributify(),
     presetIcons({
       scale: 1.2,
+      collections: {
+        'pure-icons': FileSystemIconLoader(
+          './src/assets/icons/pure',
+          (svg) => {
+            return svg.replace(/^<svg /, '<svg fill="currentColor" ')
+          },
+        ),
+        'multi-icons': FileSystemIconLoader(
+          './src/assets/icons/multi-color',
+        ),
+      },
+      customizations: {
+        iconCustomizer(collection, _icon, props) {
+          if (collection === 'pure-icons' || collection === 'multi-icons') {
+            props.width = '2rem'
+            props.height = '2rem'
+          }
+        },
+      },
     }),
   ],
   postprocess: [
