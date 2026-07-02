@@ -1,0 +1,18 @@
+{
+  "extends": "@vue3-vant-mobile/tsconfig/vue.json",
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./src/*"],
+      "~root/*": ["./*"]
+    }
+  },
+  "include": [
+    "src/App.vue",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "src/types/components.d.ts",
+    "src/types/auto-imports.d.ts",
+    "src/types/route-map.d.ts"
+  ]
+}

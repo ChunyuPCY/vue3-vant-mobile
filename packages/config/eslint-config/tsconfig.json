@@ -1,0 +1,8 @@
+{
+  "extends": "@vue3-vant-mobile/tsconfig/base.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src"
+  },
+  "include": ["src/**/*"]
+}

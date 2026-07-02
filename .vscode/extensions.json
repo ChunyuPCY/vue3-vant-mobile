@@ -7,6 +7,7 @@
     "antfu.file-nesting",
     "lokalise.i18n-ally",
     "blueglassblock.better-json5",
-    "dbaeumer.vscode-eslint"
+    "dbaeumer.vscode-eslint",
+    "antfu.pnpm-catalog-lens"
   ]
 }
