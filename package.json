@@ -11,7 +11,9 @@
   },
   "scripts": {
     "dev": "turbo run dev",
+    "dev:web": "turbo run dev --filter=@vue3-vant-mobile/web",
     "build": "turbo run build",
+    "build:web": "turbo run build --filter=@vue3-vant-mobile/web",
     "build:dev": "turbo run build:dev",
     "build:pro": "turbo run build:pro",
     "preview": "turbo run preview",
@@ -21,6 +23,7 @@
     "clean": "turbo run clean && rm -rf node_modules",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,vue,md,json}\"",
     "release": "bumpp --commit --push --tag",
+    "create-app": "node scripts/create-app.js",
     "commitlint": "commitlint --edit",
     "prepare": "simple-git-hooks"
   },
