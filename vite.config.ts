@@ -2,8 +2,8 @@ import path from 'node:path'
 import process from 'node:process'
 import { loadEnv } from 'vite'
 import type { ConfigEnv, UserConfig } from 'vite'
-import { createVitePlugins } from './build/vite'
-import { exclude, include } from './build/vite/optimize'
+import { createVitePlugins } from './build/vite/index.ts'
+import { exclude, include } from './build/vite/optimize.ts'
 
 const API_PREFIX_RE = /^\/api/
 
@@ -30,9 +30,9 @@ export default ({ mode }: ConfigEnv): UserConfig => {
 
     resolve: {
       alias: {
-        '@': path.join(__dirname, './src'),
-        '~': path.join(__dirname, './src/assets'),
-        '~root': path.join(__dirname, '.'),
+        '@': path.join(import.meta.dirname, './src'),
+        '~': path.join(import.meta.dirname, './src/assets'),
+        '~root': path.join(import.meta.dirname, '.'),
       },
     },
 
