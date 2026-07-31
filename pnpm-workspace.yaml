@@ -1,3 +1,6 @@
+minimumReleaseAgeExclude:
+  - vite@8.2.0
+
 shamefullyHoist: true
 
 shellEmulator: true
@@ -11,14 +14,11 @@ trustPolicyExclude:
 
 overrides:
   source-map: ^0.7.6
+  vite: ^8.2.0
 
 updateConfig:
   ignoreDependencies:
     - typescript
-
-peerDependencyRules:
-  allowedVersions:
-    vite: ^8.1.4
 
 allowBuilds:
   core-js: true
